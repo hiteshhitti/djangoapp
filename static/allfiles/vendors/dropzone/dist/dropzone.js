@@ -685,7 +685,7 @@
     Dropzone.prototype.destroy = function() {
       var _ref;
       this.disable();
-      this.removeAllFiles(true);
+      this.removeallfiles(true);
       if ((_ref = this.hiddenFileInput) != null ? _ref.parentNode : void 0) {
         this.hiddenFileInput.parentNode.removeChild(this.hiddenFileInput);
         this.hiddenFileInput = null;
@@ -1064,7 +1064,7 @@
       }
     };
 
-    Dropzone.prototype.removeAllFiles = function(cancelIfNecessary) {
+    Dropzone.prototype.removeallfiles = function(cancelIfNecessary) {
       var file, _i, _len, _ref;
       if (cancelIfNecessary == null) {
         cancelIfNecessary = false;
@@ -1258,7 +1258,7 @@
       })(this);
       updateProgress = (function(_this) {
         return function(e) {
-          var allFilesFinished, progress, _j, _k, _l, _len1, _len2, _len3, _results;
+          var allfilesFinished, progress, _j, _k, _l, _len1, _len2, _len3, _results;
           if (e != null) {
             progress = 100 * e.loaded / e.total;
             for (_j = 0, _len1 = files.length; _j < _len1; _j++) {
@@ -1270,17 +1270,17 @@
               };
             }
           } else {
-            allFilesFinished = true;
+            allfilesFinished = true;
             progress = 100;
             for (_k = 0, _len2 = files.length; _k < _len2; _k++) {
               file = files[_k];
               if (!(file.upload.progress === 100 && file.upload.bytesSent === file.upload.total)) {
-                allFilesFinished = false;
+                allfilesFinished = false;
               }
               file.upload.progress = progress;
               file.upload.bytesSent = file.upload.total;
             }
-            if (allFilesFinished) {
+            if (allfilesFinished) {
               return;
             }
           }

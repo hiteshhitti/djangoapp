@@ -41,7 +41,7 @@ def all(request):
 #     if request.method == 'POST':
 #         upload_image = request.FILES.get('Img')
 #         # fname = upload_image.name
-#         # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+#         # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
 #         #     for ch in upload_image.chunks():
 #         #         location.write(ch)
 #         MyData = models.Online_Booking()
@@ -159,7 +159,7 @@ def Addemployee(request):
     if request.method == 'POST':
         upload_image = request.FILES.get('Upload_Image')
         # fname = upload_image.name
-        # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+        # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
         #     for ch in upload_image.chunks():
         #         location.write(ch)
         if request.method == 'POST':
@@ -196,7 +196,7 @@ def Editemployee(request,id):
         if data.is_valid():
             # upload_image = request.FILES.get('Upload_Image')
             # fname = upload_image.name
-            # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+            # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
             #     for ch in upload_image.chunks():
             #         location.write(ch)
             data.save()
@@ -262,7 +262,7 @@ def Edit_online_Booking(request,id):
         if data.is_valid():
             # upload_image = request.FILES.get('Img')
             # fname = upload_image.name
-            # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+            # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
             #     for ch in upload_image.chunks():
             #         location.write(ch)
             data.save()
@@ -298,7 +298,7 @@ def AddCustomer(request):
     if request.method == 'POST':
         upload_image = request.FILES.get('Upload_Image')
         # fname = upload_image.name
-        # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+        # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
         #     for ch in upload_image.chunks():
         #         location.write(ch)
         if request.method == 'POST':
@@ -344,7 +344,7 @@ def EditCustomer(request,id):
         if data.is_valid():
             # upload_image = request.FILES.get('Upload_Image')
             # fname = upload_image.name
-            # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+            # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
             #     for ch in upload_image.chunks():
             #         location.write(ch)
             data.save()
@@ -460,7 +460,7 @@ def Add_room(request):
     if request.method == 'POST':
         upload_image = request.FILES.get('Room_Image')
         # fname = upload_image.name
-        # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+        # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
         #     for ch in upload_image.chunks():
         #         location.write(ch)
         if request.method == 'POST':
@@ -504,7 +504,7 @@ def EditRooms(request,id):
         if data.is_valid():
             # upload_image = request.FILES.get('Room_Image')
             # fname = upload_image.name
-            # with open('E:/Project2/HotelManagementSystem/static/Allfiles/Media/' + fname, 'wb+') as location:
+            # with open('E:/Project2/HotelManagementSystem/static/allfiles/Media/' + fname, 'wb+') as location:
             #     for ch in upload_image.chunks():
             #         location.write(ch)
             data.save()

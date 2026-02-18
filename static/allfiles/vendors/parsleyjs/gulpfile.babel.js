@@ -149,11 +149,11 @@ function browserifyBundler() {
   // should individually load up pieces of our application.
   // We also include the browserify setup file.
   const testFiles = glob.sync('./test/unit/**/*.js');
-  const allFiles = ['./test/setup/browserify.js'].concat(testFiles);
+  const allfiles = ['./test/setup/browserify.js'].concat(testFiles);
 
   // Create our bundler, passing in the arguments required for watchify
   watchify.args.debug = true;
-  const bundler = browserify(allFiles, watchify.args);
+  const bundler = browserify(allfiles, watchify.args);
 
   // Set up Babelify so that ES6 works in the tests
   bundler.transform(babelify.configure({
