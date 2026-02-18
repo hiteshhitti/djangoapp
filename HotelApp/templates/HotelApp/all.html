@@ -1,0 +1,10 @@
+{% for r in rooms %}
+  <div>
+    <h3>Room {{ r.Room_Number }}</h3>
+    <p>Type: {{ r.Room_Type }}</p>
+    <p>Floor: {{ r.Room_Floor }}</p>
+    <p>Price: ₹{{ r.Room_Price }}</p>
+  </div>
+{% empty %}
+  <p>No rooms found</p>
+{% endfor %}
